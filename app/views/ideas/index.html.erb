@@ -1,1 +1,16 @@
-Hi
+<h1>I am interested in</h1>
+<h1>I live</h1>
+
+Ideas
+
+<ul>
+	<% @ideas.each do |idea| %>
+		<li><%= link_to idea.title, idea %>
+			<p><%= idea.description %>
+			<p><%= idea.location %>
+		</li>
+	<% end %>
+</ul>
+
+<h3>No Project Too Silly</h3>
+<%= render "form" %>
