@@ -1,4 +1,5 @@
 Keep::Application.routes.draw do
+  devise_for :users
   resources :ideas, :only => [:index, :new, :create, :show]
   root 'ideas#index'
 
