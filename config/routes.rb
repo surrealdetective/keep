@@ -1,5 +1,5 @@
 Keep::Application.routes.draw do
-  resources :ideas, :only => [:index, :new, :create]
+  resources :ideas, :only => [:index, :new, :create, :show]
   root 'ideas#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
