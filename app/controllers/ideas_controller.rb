@@ -10,7 +10,7 @@ class IdeasController < ApplicationController
   end
 
   def create
-    @idea = Idea.create(idea_params)
+    @idea = Idea.new(idea_params)
     if @idea.save
     	flash[:notice] = "Idea sparked successfully."
     	redirect_to idea_path(@idea)
