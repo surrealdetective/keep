@@ -11,7 +11,13 @@ class IdeasController < ApplicationController
 
   def create
     @idea = Idea.create(idea_params)
-    redirect_to idea_path(@idea)
+    if @idea.save
+    	flash[:notice] = "Idea sparked successfully."
+    	redirect_to idea_path(@idea)
+    else
+    	flash[:alert] = "Idea still needs some sparking."
+    	redirect_to ideas_path
+    end
   end
 
   def show
