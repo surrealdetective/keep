@@ -7,7 +7,8 @@ Keep::Application.routes.draw do
     resources :links, :only => [:new, :create, :show, :index]
   end
 
-  get 'users/:id' => 'users#show'
+  get 'users/:id' => 'users#show', :as => "user"
+  post 'users/:id/next_path' => 'users#next', :as => "next"
 
   root 'ideas#index'
 

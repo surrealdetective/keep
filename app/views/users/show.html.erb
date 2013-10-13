@@ -15,21 +15,7 @@
       <p class="beneath">This project is taking place in <%= @rand.location %></p>
     </div>
   </div>
-  <div class="row red cf">
-    <div class="col-md-offset-1 col-md-9">
-      <h4><%= rand_question %></h4>
-      <input type="text" value="" class="form-control">
-    </div>
-  <div class="row">
-    <div class="col-md-6 floater">
-      <button class="btn btn-md btn-primary">Contribute</button>
 
-      <button class="btn btn-md btn-inverse">Dig Deeper</button>
-      <button class="btn btn-md btn-warning">Next Project</button>
-    </div>
-
-  </div>
-</div>
-
-<br><br>
+<%= render "comments/form_for_user" %>
 <% end %>
+
