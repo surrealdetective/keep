@@ -1,18 +1,25 @@
 <% if user_signed_in? %>
+<div style="text-align:center;">
 <p>Ready to make a difference?</p>
+</div>
+
+
+
 <br>
-  <div class="row">
-    <div class="col-md-offset-1 col-md-10">
+  <div class="clearfix" style="width:800px; margin: 0 auto;">
+    <div>
+      <div style="text-align:center;">
 
-      <h4>Recent ideas based on your interests</h4>
+        <h4>Recent ideas based on your interests</h4>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-offset-2 col-md-10">
-      <h6><%= @rand.title %></h6>
-      <p><%= @rand.description %></p>
-      <p class="beneath">This project is taking place in <%= @rand.location %></p>
+    <div>
+      <div style="background-color: #EDEDED; border-radius: 10px; padding: 15px 10px;">
+        <h6><%= @rand.title %></h6>
+        <p><%= @rand.description %></p>
+        <p class="beneath">This project is taking place in <%= @rand.location %></p>
+      </div>
     </div>
   </div>
 
