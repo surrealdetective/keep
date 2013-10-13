@@ -1,6 +1,6 @@
 class Resources < ActiveRecord::Migration
   def change
-  	create_table :resources do |t|
+  	create_table :links do |t|
   		t.string :title
       t.text :content
       t.string :link

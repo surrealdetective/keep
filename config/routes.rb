@@ -4,6 +4,7 @@ Keep::Application.routes.draw do
   resources :ideas, :only => [:index, :new, :create, :show] do
     resources :comments, :only => [:new, :create, :show, :index]
     resources :statuses, :only => [:new, :create, :show, :index]
+    resources :links, :only => [:new, :create, :show, :index]
   end
 
   get 'users/:id' => 'users#show'

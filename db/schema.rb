@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20131013053747) do
     t.datetime "updated_at"
   end
 
-  create_table "resources", force: true do |t|
+  create_table "links", force: true do |t|
     t.string   "title"
     t.text     "content"
     t.string   "link"

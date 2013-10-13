@@ -25,8 +25,8 @@ class IdeasController < ApplicationController
     @idea     = Idea.find_by_id(params[:id])
     @comment  = Comment.new
     @comments = @idea.comments
-    @status = Status.new
     @statuses = @idea.statuses
+    @links = @idea.links
   end
 
   private

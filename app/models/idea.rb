@@ -6,6 +6,7 @@ class Idea < ActiveRecord::Base
 
   has_many :comments
   has_many :statuses
+  has_many :links
 
   def self.rand_idea
   	self.all.sample 	#finds a random idea
