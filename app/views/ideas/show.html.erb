@@ -1,7 +1,36 @@
-<%= @idea.title %>
-<%= @idea.description %>
-<%= @idea.location %>
+<div class="row">
+	<div class="col-md-offset-2 col-md-10">
+		<h3><%= @idea.title %></h3>
+		<p><%= @idea.description %></p>
+		<p><%= @idea.location %></p>
+	</div>
+</div>
 
-<%= render "comments/form" %>
+<div class="row">
+	<div class="col-md-8">
+		<h3>What I'm doing now</h3>
+		<p><%= link_to "Add Idea Update", new_idea_status_path(@idea), :class => "btn btn-md btn-primary" %></p>
 
-<%= render "comments/index" %>
+	<ul id='statuses'>
+ 		<% @idea.statuses.each do |status| %>
+    <%= status.title %>
+     <p><%= status.content %></p>
+    <% end %>
+  </ul>
+
+	</div>
+	<div class="col-md-4">
+		<h3>Resources</h3>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+
+		<%= render "comments/form" %>
+
+		<%= render "comments/index" %>
+	</div>
+	<div class="col-md-4">
+		<h3>Contributors</h3>
+	</div>
+</div>
