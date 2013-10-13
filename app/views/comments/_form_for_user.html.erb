@@ -16,8 +16,8 @@
     <%= f.text_field :comment, :class => "form-control" %>
   </div></br>
   <div class="actions">
-    <%= f.submit "Contribute", :class => "btn btn-md btn-primary" %>
-    <button class="btn btn-md btn-inverse">Dig Deeper</button>
+    <%= f.submit "Contribute", :class => "btn btn-md btn-primary", :name => "commit", :value => "Contribute" %>
+    <%= f.submit "Dig Deeper", :class => "btn btn-md btn-inverse", :name => "commit", :value => "Dig Deeper" %>
 <% end %>
     <%= link_to "Next Project", next_path(@user), :class => "btn btn-md btn-warning", :method => "POST" %>
   </div>
