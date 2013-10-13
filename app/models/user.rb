@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :comments
+  has_many :statuses
 
   def next_idea
     ideas
@@ -24,4 +25,7 @@ class User < ActiveRecord::Base
   def seen_ideas
     @seen_ideas ||= []
   end
+
+  
+
 end

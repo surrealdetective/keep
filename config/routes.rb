@@ -3,8 +3,9 @@ Keep::Application.routes.draw do
   devise_for :users
   resources :ideas, :only => [:index, :new, :create, :show] do
     resources :comments, :only => [:new, :create, :show, :index]
+    resources :statuses, :only => [:new, :create, :show, :index]
   end
-  
+
   get 'users/:id' => 'users#show', :as => "user"
   post 'users/:id/next_path' => 'users#next', :as => "next"
 
