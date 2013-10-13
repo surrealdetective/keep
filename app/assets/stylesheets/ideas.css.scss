@@ -90,10 +90,16 @@ body{
 	color: #fff;
 }
 
+
 .centered_down{
 	margin-top: 12px;
 }
 
 .navbar{
 	border-radius: 0;
+}
+
+.scrolly {
+	height: 370px;
+	overflow: auto;
 }
