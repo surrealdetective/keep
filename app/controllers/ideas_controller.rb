@@ -3,6 +3,7 @@ class IdeasController < ApplicationController
   def index
     @ideas = Idea.all
     @idea = Idea.new
+    @rand = Idea.rand_idea
   end
 
   def new

@@ -3,4 +3,12 @@ class Idea < ActiveRecord::Base
   validates :title, :presence => true
   validates :description, :presence => true
   validates :location, :presence => true
+
+
+  def self.rand_idea
+  	self.all.sample 	#finds a random idea
+  end
+
+
 end
+
