@@ -35,6 +35,12 @@
 	<div class="col-md-6">
 		<h4>Idea Sparks</h4>
 		<div id="testimonies" class="scrolly">
+				<% cache "testimonies#{Date.today}" do %>
+			 	<% Twitter.favorites("keep_academy", count: 4).each do |tweet| %>
+			   <blockquote><%= tweet.text %></blockquote>
+			   <div class="from">&mdash; @<%= tweet.user.screen_name %></div><br>
+	 			<% end %>
+	 		<% end %>
 
 		</div>
 	</div>
