@@ -13,8 +13,9 @@ class CommentsController < ApplicationController
         redirect_to user_path(current_user)
       elsif params[:commit] == 'Dig Deeper'
         redirect_to idea_path(@idea)
+      else
+        redirect_to idea_path(@idea)
       end
-      redirect_to idea_path(@idea)
     else
       flash[:alert]  = "Comment still needs some sparking."
       redirect_to idea_path(@idea)
