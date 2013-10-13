@@ -1,0 +1,35 @@
+<% if user_signed_in? %>
+<p>Ready to make a difference?</p>
+<br>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+
+      <h4>Recent ideas based on your interests</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-10">
+      <h6><%= @rand.title %></h6>
+      <p><%= @rand.description %></p>
+      <p class="beneath">This project is taking place in <%= @rand.location %></p>
+    </div>
+  </div>
+  <div class="row red cf">
+    <div class="col-md-offset-1 col-md-9">
+      <h4><%= rand_question %></h4>
+      <input type="text" value="" class="form-control">
+    </div>
+  <div class="row">
+    <div class="col-md-6 floater">
+      <button class="btn btn-md btn-primary">Contribute</button>
+
+      <button class="btn btn-md btn-inverse">Dig Deeper</button>
+      <button class="btn btn-md btn-warning">Next Project</button>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+<% end %>

@@ -5,6 +5,8 @@ Keep::Application.routes.draw do
     resources :comments, :only => [:new, :create, :show, :index]
   end
   
+  get 'users/:id' => 'users#show'
+
   root 'ideas#index'
 
 
