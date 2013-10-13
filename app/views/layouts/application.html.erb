@@ -11,10 +11,12 @@
 <div class="container">
 
   <div id="login" class="clearfix">
-        <span id="email" style="float: left;">
-          Logged in as <strong><%= current_user.email %></strong>
-        </span>
-        <span id="actions" style="float: right;">
+          <% if user_signed_in? %>
+            <span id="email" style="float: left;">
+              Logged in as <strong><%= current_user.email %></strong>
+            </span>
+          <% end %>
+          <span id="actions" style="float: right;">
           <% if user_signed_in? %>
             <%= link_to 'View profile', user_path(current_user) %> |
             <%= link_to 'Edit profile', edit_user_registration_path %> |
