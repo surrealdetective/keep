@@ -1,6 +1,6 @@
-		<div id="testimonies">
-		 <% #Twitter.favorites("keep_academy", count: 4).each do |tweet| %>
-		   <blockquote><%= #tweet.text %></blockquote>
-		   <div class="from">&mdash; @<%= #tweet.user.screen_name %></div>
- 			<% end %>
-		</div>
+			<% cache "testimonies#{Date.today}" do %>
+			 	<% Twitter.favorites("keep_academy", count: 4).each do |tweet| %>
+			   <blockquote><%= tweet.text %></blockquote>
+			   <div class="from">&mdash; @<%= tweet.user.screen_name %></div><br>
+	 			<% end %>
+	 		<% end %>

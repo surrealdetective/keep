@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   def new
-    
+
   end
 
   def create
@@ -14,6 +14,7 @@ class CommentsController < ApplicationController
       elsif params[:commit] == 'Dig Deeper'
         redirect_to idea_path(@idea)
       end
+      redirect_to idea_path(@idea)
     else
       flash[:alert]  = "Comment still needs some sparking."
       redirect_to idea_path(@idea)
@@ -21,11 +22,11 @@ class CommentsController < ApplicationController
   end
 
   def index
-    
+
   end
 
   def show
-    
+
   end
 
   private
