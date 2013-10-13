@@ -39,6 +39,9 @@ group :development do
   gem 'binding_of_caller'
   gem 'quiet_assets'
 end
+
+gem 'twitter'
+gem 'omniauth-twitter'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-switch
+//= require jquery.tagsinput.js
+//= require jquery.placeholder.js
+//= require bootstrap-select
+//= require application_file
 //= require_tree .

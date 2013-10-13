@@ -10,7 +10,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
-h1{
+h1, h2{
 	font-family: 'Open Sans', sans-serif;
 }
 h3{
@@ -71,4 +71,9 @@ body{
 
 .cf:after {
     clear: both;
+}
+
+.large{
+	height: 75px;
+	width: 100%;
 }

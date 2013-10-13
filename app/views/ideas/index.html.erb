@@ -41,22 +41,67 @@
 <br><br>
 <% end %>
 
+	<div class="row">
+			<div class=" col-md-6">
+		<h2>I'm interested in </h2>
+		<select name="interestlist" value="Save the World" class="select-block" style="display: none;">
+            <option value="0" selected="selected">Saving the World</option>
+            <option value="1">Chemistry</option>
+            <option value="2">Photography</option>
+            <option value="3">Social Service</option>
+          </select>
+				<div class="btn-group select select-block">
+					<i class="dropdown-arrow dropdown-arrow-inverse"></i>
+					<button class="btn dropdown-toggle clearfix btn-primary" data-toggle="dropdown"><span class="filter-option pull-left">Saving the World</span>&nbsp;<span class="caret">
+					</span></button>
+						<ul class="dropdown-menu dropdown-inverse" role="menu" style="overflow-y: auto; min-height: 111px; max-height: 141px;">
+							<li rel="0" class="selected">
+								<a href="#" class="active">
+									<span tabindex="-1" class="pull-left">Saving the World</span>
+								</a>
+							</li>
+							<li rel="1">
+								<a href="#" class="">
+									<span tabindex="-1" class="pull-left">Chemistry</span>
+								</a>
+							</li>
+							<li rel="2">
+								<a href="#" class="">
+									<span tabindex="-1" class="pull-left">Photography</span>
+								</a>
+							</li>
+							<li rel="3">
+								<a href="#" class="">
+									<span tabindex="-1" class="pull-left">Social Service</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-<h1>I am interested in</h1>
-<br>
-<h1>I live</h1>
+
+
+			<div class=" col-md-6">
+				<h2>I live </h2>
+
+				<input type="text" value="" class="form-control large">
+			</div>
+		</div>
+
+
+<br><br>
+
+
 
 <div class="row">
-	<div class="col-md-4">
-		News/Community
+	<div class="col-md-6">
+		<h4>Idea Sparks</h4>
+		NEWS
 	</div>
 
-	<div class="col-md-4">
-		Opportunities
-	</div>
 
-	<div class="col-md-4">
-		Ideas
+	<div class="col-md-6">
+		<h4>Projects</h4>
 
 		<ul>
 			<% @ideas.each do |idea| %>
