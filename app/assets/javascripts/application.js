@@ -18,4 +18,4 @@
 //= require jquery.placeholder.js
 //= require bootstrap-select
 //= require application_file
-//= require_tree .
+//= require tree .
