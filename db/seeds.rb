@@ -7,31 +7,38 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 a1 = Idea.create(
-  :title => "Fix concrete cracks", 
+  :title       => "Fix concrete cracks", 
   :description => "Learn how to get the materials to DIY so that my neighborhood looks pretty",
-  :inspiration => "The Incans did it, so can we.")
+  :inspiration => "The Incans did it, so can we.",
+  :location    => "New York City"
+  )
 
 a2 = Idea.create(
-  :title => "Everyone hugs",
-  :description => "Initiate a hugging party in a crowded area"
-  :inspiration => "Turn frowns upside down"
+  :title       => "Everyone hugs",
+  :description => "Initiate a hugging party in a crowded area",
+  :inspiration => "Turn frowns upside down",
+  :location    => "New York City"
   )
 
 a3 = Idea.create(
-  :title => "Teach women bike maintenance",
+  :title       => "Teach women bike maintenance",
   :description => "Hold a block party where women fix bike on the streets",
-  :inspiration -> "It's cool to fix bikes, so flaunt it.")
+  :inspiration => "It's cool to fix bikes, so flaunt it.",
+  :location    => "New York City"
+  )
 
 a4 = Idea.create(
-  :title => "Give blood to those who need",
+  :title       => "Give blood to those who need",
   :description => "Hold a blood drive",
-  :inspiration => "The community hospital lacks blood"
+  :inspiration => "The community hospital lacks blood",
+  :location    => "New York City"
   )
 
 a5 = Idea.create(
-  :title => "Photo-document workers before they enter their office building"
-  :description => "What is their expression like? What does this say about our society?"
-  :inspiration => "I see it everyday when I go outside. But photos will help me see it in a different way."
+  :title       => "Photo-document workers before they enter their office building",
+  :description => "What is their expression like? What does this say about our society?",
+  :inspiration => "I see it everyday when I go outside. But photos will help me see it in a different way.",
+  :location    => "New York City"
   )
 
 ideas = [a1, a2, a3, a4, a5]
