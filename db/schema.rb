@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131013160157) do
+ActiveRecord::Schema.define(version: 20131013183843) do
 
   create_table "comments", force: true do |t|
     t.text     "comment"
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20131013160157) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "inspiration"
     t.string   "image"
+    t.text     "inspiration"
   end
 
   create_table "links", force: true do |t|
