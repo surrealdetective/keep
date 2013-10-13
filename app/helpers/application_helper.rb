@@ -15,9 +15,9 @@ module ApplicationHelper
       ["How would you motivate yourself to take this idea to completion?", "I would "],
       ["How in your life might you benefit by helping this project succeed?", "Doing this project would benefit my life by "],
       ["What rules would you set for yourself to make this project succeed", "A rule I'd follow is "],
-      ["If you were to do this project, what would be the most interesting part of doing it for you?", "I'm really interested by "]
-      ["Help this project out, look on the internet and find an organization that could fund this idea", "Check out "]
-      ["Help this project out, find one friend who you think might have something to contribute", "Meet my friend, "]
+      ["If you were to do this project, what would be the most interesting part of doing it for you?", "I'm really interested by "],
+      ["Help this project out, look on the internet and find an organization that could fund this idea", "Check out "],
+      ["Help this project out, find one friend who you think might have something to contribute", "Meet my friend, "],
       ["If you could change one part about this idea, what would you change?", "I'd change "]
     ]
   	questions.sample
