@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20131013160157) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
     t.text     "inspiration"
+    t.string   "image"
   end
 
   create_table "links", force: true do |t|
