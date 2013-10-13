@@ -34,7 +34,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<h4>Idea Sparks</h4>
-		<div id="testimonies">
+		<div id="testimonies" class="scrolly">
 
 		</div>
 	</div>
@@ -42,16 +42,16 @@
 
 	<div class="col-md-6">
 		<h4>Projects</h4>
-
-		<ul>
-			<% @ideas.each do |idea| %>
-				<h6 class="bold"><%= link_to idea.title, idea %></h6>
-					<ul><p><%= idea.description %></p>
-					<p class="beneath">This idea is taking place <%= idea.location %></p>
-				</ul>
-			<% end %>
-		</ul>
-
+		<div class="scrolly">
+			<ul>
+				<% @ideas.each do |idea| %>
+					<h6 class="bold"><%= link_to idea.title, idea %></h6>
+						<ul><p><%= idea.description %></p>
+						<p class="beneath">This idea is taking place <%= idea.location %></p>
+					</ul>
+				<% end %>
+			</ul>
+		</div>
 	</div>
 </div>
 

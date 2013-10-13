@@ -1,9 +1,13 @@
 <% if @comments %>  
-  <ul class="comments">
-  <% @comments.each do |comment| %>
-    <li class="comment">
-    <%= comment.comment %>
-    </li>
-  <% end %>
-  </ul>
+  <div style="margin-top: 20px;">
+    <h4>Comments</h4>
+    <ul class="comments">
+    <% @comments.each do |comment| %>
+      <div class="comment">
+        <p class="bold"><%= comment.user.email %> says...</p>
+        <span class="says"> <%= comment.comment %></span>
+      </div>
+    <% end %>
+    </ul>
+  </div>
 <% end %>
