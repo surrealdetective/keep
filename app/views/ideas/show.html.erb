@@ -12,9 +12,9 @@
 		<p><%= link_to "Add Idea Update", new_idea_status_path(@idea), :class => "btn btn-md btn-primary" %></p>
 
 	<ul id='statuses'>
- 		<% @idea.statuses.each do |status| %>
-    <%= status.title %>
-     <p><%= status.content %></p>
+	 	<% @idea.statuses.each do |status| %>
+	    <%= status.title %>
+	     <p><%= status.content %></p>
     <% end %>
   </ul>
 
