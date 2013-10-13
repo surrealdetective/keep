@@ -22,7 +22,9 @@ class IdeasController < ApplicationController
   end
 
   def show
-    @idea = Idea.find_by_id(params[:id])
+    @idea     = Idea.find_by_id(params[:id])
+    @comment  = Comment.new
+    @comments = @idea.comments
   end
 
   private

@@ -4,7 +4,8 @@ class Idea < ActiveRecord::Base
   validates :description, :presence => true
   validates :location, :presence => true
 
-
+  has_many :comments
+  
   def self.rand_idea
   	self.all.sample 	#finds a random idea
   end

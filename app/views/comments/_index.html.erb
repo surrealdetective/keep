@@ -1,0 +1,9 @@
+<% if @comments %>  
+  <ul class="comments">
+  <% @comments.each do |comment| %>
+    <li class="comment">
+    <%= comment.comment %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>

@@ -1,6 +1,10 @@
 Keep::Application.routes.draw do
+
   devise_for :users
-  resources :ideas, :only => [:index, :new, :create, :show]
+  resources :ideas, :only => [:index, :new, :create, :show] do
+    resources :comments, :only => [:new, :create, :show, :index]
+  end
+  
   root 'ideas#index'
 
 
