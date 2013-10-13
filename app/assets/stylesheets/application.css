@@ -12,6 +12,7 @@
  *= require "bootstrap.css"
  *= require "flat-ui.css"
  *= require "demo.css"
- *= require_tree .
+ *= require "ideas.css"
+
  */
 
