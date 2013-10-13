@@ -45,6 +45,8 @@ gem 'omniauth-twitter'
 gem 'carrierwave'
 gem "rmagick"
 
+#help seed
+gem 'faker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
