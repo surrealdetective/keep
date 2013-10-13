@@ -8,25 +8,9 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <%= render 'layouts/header' %>
 <div class="container">
 
-  <div id="login" class="clearfix">
-          <% if user_signed_in? %>
-            <span id="email" style="float: left;">
-              Logged in as <strong><%= current_user.email %></strong>
-            </span>
-          <% end %>
-          <span id="actions" style="float: right;">
-          <% if user_signed_in? %>
-            <%= link_to 'View profile', user_path(current_user) %> |
-            <%= link_to 'Edit profile', edit_user_registration_path %> |
-            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%= link_to "Sign up", new_user_registration_path %> |
-            <%= link_to "Login", new_user_session_path %>
-          <% end %>
-        </span>
-  </div>
 
   <% flash.each do |key, value| %>
     <div class='flash' id='<%= key %>'>
