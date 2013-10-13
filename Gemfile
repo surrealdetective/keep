@@ -42,6 +42,9 @@ end
 
 gem 'twitter'
 gem 'omniauth-twitter'
+
+#help seed
+gem 'faker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
