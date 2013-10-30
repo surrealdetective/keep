@@ -22,7 +22,7 @@ send me a pull request.
 ## Authors
 
 * Leandra Tejedor (https://github.com/ltejedor)
-* Alex Au](https://github.com/surrealdetective)
+* Alex Au (https://github.com/surrealdetective)
 
 
 ## License
